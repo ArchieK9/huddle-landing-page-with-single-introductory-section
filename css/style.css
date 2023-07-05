@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url(bg-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-color: hsl(257, 40%, 49%);
+} 
+
+header{
+    margin: 2rem;
+}
+
+section{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.illustration, .text{
+    width: 50%;
+    margin-left: 2rem;
+}
+
+.text{
+    margin-right: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.illustrate{
+    margin-right: 2rem;
+    width: 100%;
+}
+
+h1{
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    font-size: 3rem;
+    color: #fff;
+}
+
+p{
+    font-weight: 400;
+    font-family: 'Opens Sans' , sans-serif;
+    color: #fff;
+    position: relative;
+    bottom: 2rem;
+}
+
+button{
+    background-color: #fff;
+    text-decoration: none;
+    border-radius: 2.5rem;
+    color: hsl(257, 40%, 49%);
+    border: none;
+    width: 10rem;
+    padding: 1rem 0;
+    transition: .3s ease;
+}
+
+.social{
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+}
+
+button:hover{
+    background-color: hsl(300, 69%, 71%);
+    color: #fff;
+    cursor: pointer;
+}
+
+.fab{
+    border-style: solid;
+    border-radius: 50%;
+    border-width: .1rem;
+    padding: .5rem;
+    color: #fff;
+    margin-right: 2rem;
+    transition: .5s ease;
+}
+
+.fab:hover{
+    color:  hsl(300, 69%, 71%);
+}
+
+@media all and (max-width : 768px){
+    body{
+        background-image: url(bg-mobile.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: hsl(257, 40%, 49%);
+    }  
+
+    section{
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+    }
+
+    .illustration{
+        width: 85%;
+        margin: 0;
+    }
+
+    .illustrate{
+        margin: 0;
+        width: 100%
+    }
+
+    .text{
+        align-items: center;
+        padding: 0 2rem;
+        margin: 0;
+        width: auto;
+    }
+
+    h1{
+        text-align: center;
+    }
+
+    p{
+        text-align: center;
+    }
+
+    .social{
+        margin: 2rem 0;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 25%;
+    }
+
+    .fab{
+        margin: 0;
+    }
+}
+
+@media(max-width:425px){
+
+    h1{
+        font-size: 1rem;
+    }
+
+    p{
+        padding: 0;
+        bottom: 0;
+    }
+
+    .social{
+        width: 50%;
+    }
+}
